@@ -12,7 +12,7 @@ class RollDice extends Component {
           <Die />
           <Die />
         </div>
-        <button>Roll Dice!</button>
+        <button className="RollDice-button">Roll Dice!</button>
       </div>
     );
   }
