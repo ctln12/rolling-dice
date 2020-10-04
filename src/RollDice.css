@@ -1,0 +1,4 @@
+.RollDice-dice {
+  display: flex;
+  justify-content: space-evenly;
+}
