@@ -10,4 +10,12 @@
   border-radius: 10px;
   padding: 1.2rem;
   cursor: pointer;
+  border: 1px solid #7b6cd3;
+  background-color: #7b6cd3;
+  color: white;
+}
+
+.RollDice-button:hover {
+  border: 1px solid #5b4ea3;
+  background-color: #5b4ea3;
 }
