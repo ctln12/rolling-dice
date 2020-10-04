@@ -19,3 +19,7 @@
   border: 1px solid #5b4ea3;
   background-color: #5b4ea3;
 }
+
+.RollDice-button:focus {
+  outline: none;
+}
