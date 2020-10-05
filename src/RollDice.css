@@ -15,9 +15,15 @@
   color: white;
 }
 
-.RollDice-button:hover {
+.RollDice-button:hover,
+.disabled {
   border: 1px solid #5b4ea3;
   background-color: #5b4ea3;
+}
+
+.disabled {
+  pointer-events: none;
+  color: #cecece;
 }
 
 .RollDice-button:focus {
