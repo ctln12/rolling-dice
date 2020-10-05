@@ -6,7 +6,7 @@ This project aims to practice working with props, defaultProps, state, and simpl
 
 The goal is to create a rolling dice application that displays an interface that looks like this:
 
-![rolling dice](./src/rolling_dice.png)
+![rolling dice](./src/rolling_dice.gif)
 
 ### Technologies
 
@@ -18,6 +18,7 @@ The goal is to create a rolling dice application that displays an interface that
 
 * Display two dice and a button
 * Simulate the rolling of the dice when clicking on the button
+* During the rolling the button is disabled and its message changes
 
 ### Poject status
 
