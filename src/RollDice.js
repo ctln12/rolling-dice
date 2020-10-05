@@ -42,7 +42,7 @@ class RollDice extends Component {
           <Die number={number2} isRolling={isRolling} />
         </div>
         <button
-          className="RollDice-button"
+          className={`RollDice-button${isRolling ? ' disabled' : ''}`}
           onClick={this.roll}>
           Roll Dice!
         </button>
