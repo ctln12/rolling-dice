@@ -9,7 +9,8 @@ class RollDice extends Component {
     super(props);
     this.state = {
       number1: 'one',
-      number2: 'one'
+      number2: 'six',
+      isRolling: false
     }
     this.getRandomNumber = this.getRandomNumber.bind(this);
     this.roll = this.roll.bind(this);
@@ -22,6 +23,10 @@ class RollDice extends Component {
     return numbers[idx];
   }
   roll(){
+    setTimeout(() => {
+      this.setState({ isRolling: false });
+    }, 1000);
+    this.setState({isRolling: true});
     const {numbers} = this.props;
     let num1 = this.getRandomNumber(numbers);
     this.setState({number1: num1});
@@ -29,12 +34,12 @@ class RollDice extends Component {
     this.setState({number2: num2});
   }
   render() {
-    const {number1, number2} = this.state;
+    const {number1, number2, isRolling} = this.state;
     return (
       <div className="RollDice">
         <div className="RollDice-dice">
-          <Die number={number1} />
-          <Die number={number2} />
+          <Die number={number1} isRolling={isRolling} />
+          <Die number={number2} isRolling={isRolling} />
         </div>
         <button
           className="RollDice-button"
